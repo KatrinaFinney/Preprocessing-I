@@ -1,1 +1,263 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html,
+body {
+  font-size: 62.5%;
+  background-image: url("../images/anniversary-beautiful-bloom-1447367.jpg");
+  height: 100%;
+  background-size: 100vw 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html nav,
+body nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  padding-bottom: 3rem;
+}
+html nav a,
+body nav a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.8rem;
+  padding: 1rem;
+  text-shadow: -1px -1px 0 #865400, 1px -1px 0 #865400, -1px 1px 0 #865400, 1px 1px 0 #865400;
+}
+html header,
+body header {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+  margin-top: 50px;
+}
+html header .headerRight,
+body header .headerRight {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.8rem;
+  border-radius: 25px;
+  margin: 20px;
+  padding: 20px;
+  color: whitesmoke;
+}
+html header .headerRight h1,
+body header .headerRight h1 {
+  font-size: 16rem;
+  font-family: 'Libre Baskerville', serif;
+  color: whitesmoke;
+  text-shadow: -1px -1px 0 #B8860B, 1px -1px 0 #B8860B, -1px 1px 0 #B8860B, 1px 1px 0 #B8860B;
+}
+html header .headerRight h2,
+body header .headerRight h2 {
+  font-size: 3.8rem;
+  font-family: 'Playfair Display', serif;
+  color: whitesmoke;
+  margin: 15px;
+  /*text-shadow:
+					-1px -1px 0 #B8860B,
+					1px -1px 0 #B8860B,
+					-1px 1px 0 #B8860B,
+					1px 1px 0 #B8860B;*/
+}
+html header .headerRight p,
+body header .headerRight p {
+  color: whitesmoke;
+  margin: 2px;
+  padding: 1rem;
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  text-shadow: -1px -1px 0 maroon, 1px -1px 0 maroon, -1px 1px 0 maroon, 1px 1px 0 maroon;
+}
+html header .headerLeft,
+body header .headerLeft {
+  width: 50%;
+}
+html header .headerLeft img,
+body header .headerLeft img {
+  border-radius: 50%;
+}
+html header .middleContent,
+body header .middleContent {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+html header .middleContent .leftMiddle,
+body header .middleContent .leftMiddle {
+  width: 50%;
+}
+html header .middleContent .leftMiddle li,
+body header .middleContent .leftMiddle li {
+  font-size: 2rem;
+  color: maroon;
+}
+html header .middleContent .rightMiddle,
+body header .middleContent .rightMiddle {
+  width: 50%;
+}
+html header .middleContent .rightMiddle li,
+body header .middleContent .rightMiddle li {
+  font-size: 2rem;
+  color: maroon;
+}
+html h3,
+body h3 {
+  font-size: 3rem;
+  font-family: 'Libre Baskerville', serif;
+  color: whitesmoke;
+  text-shadow: -1px -1px 0 #B8860B, 1px -1px 0 #B8860B, -1px 1px 0 #B8860B, 1px 1px 0 #B8860B;
+}
+.image-overlay {
+  width: 100%;
+  height: 100%;
+  background-repeat: inherit;
+  background-color: tan;
+  opacity: 0.7;
+  border-radius: 5%;
+  margin: 2rem;
+}
+.image-overlay ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.image-overlay ul li {
+  font-size: 2rem;
+  color: maroon;
+  margin: 1rem;
+}

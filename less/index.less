@@ -50,10 +50,185 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	max-width:100%
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
+	
+	@mainColor: whitesmoke;
+	@mainColor2: maroon;
+		
+		background-image: url("../images/anniversary-beautiful-bloom-1447367.jpg");
+		height: 100%;
+		background-size: 100vw 100vh;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+.mediaMixin(){
+	color: @mainColor;
+	background-color: @mainColor2;
+
+}		
+@media (max-width:500px){
+	display:flex;
+	flex-direction:column;
+}
+.viewMixin(){
+	@width: vw;
+	@height: vh;
 }
 
+
+nav{
+display:flex;
+justify-content: flex-end;
+padding: 1rem;
+padding-bottom: 3rem;
+
+	a{
+		text-decoration: none;
+		color: @mainColor;
+		font-size: 1.8rem;
+		padding:1rem;
+		text-shadow:
+					-1px -1px 0 #B8860B - 50%,
+					1px -1px 0 #B8860B - 50%,
+					-1px 1px 0 #B8860B - 50%,
+					1px 1px 0 #B8860B - 50%;
+		
+	}
+}
+header{
+	display:flex;
+	flex-direction:row;
+	margin:2rem;
+	margin-top: 50px;
+	
+	
+
+	
+	
+	
+	
+		.headerRight{
+			width: 50%;
+			display:flex;
+			justify-content: center;
+			flex-direction:column;
+			text-align:center;
+			font-size: 1.8rem;
+			border-radius: 25px;
+			margin: 20px;
+			padding: 20px;
+			color: @mainColor;
+				h1{
+					font-size:16rem;
+					font-family: 'Libre Baskerville', serif;
+					color:@mainColor;
+					
+					text-shadow:
+					-1px -1px 0 #B8860B,
+					1px -1px 0 #B8860B,
+					-1px 1px 0 #B8860B,
+					1px 1px 0 #B8860B;
+					
+				}
+				h2{ 
+					font-size:3.8rem;
+					font-family: 'Playfair Display', serif;
+					color:@mainColor;
+					margin:15px;
+					/*text-shadow:
+					-1px -1px 0 #B8860B,
+					1px -1px 0 #B8860B,
+					-1px 1px 0 #B8860B,
+					1px 1px 0 #B8860B;*/
+				}
+				p{
+					color: @mainColor;
+					margin:2px;
+					padding:1rem;
+					font-size:2.5rem;
+					font-family: 'Playfair Display', serif;
+					text-shadow:
+					-1px -1px 0 @mainColor2,
+					1px -1px 0 @mainColor2,
+					-1px 1px 0 @mainColor2,
+					1px 1px 0 @mainColor2;
+
+				}
+				
+		}
+		.headerLeft{
+			width: 50%;
+		
+
+			img{
+				border-radius: 50%;
+			}
+		}
+		.middleContent{
+			display:flex;
+			justify-content:space-between;
+			flex-direction:column;
+		
+			.leftMiddle{
+				width:50%;
+		
+				li{
+				font-size:2rem;
+				color:@mainColor2;
+		
+				}
+			}
+			.rightMiddle{
+				width:50%;
+				
+		
+				li{
+					font-size:2rem;
+					color: @mainColor2;
+				}
+			}
+		}
+}
+
+h3{
+	font-size:3rem;
+	font-family: 'Libre Baskerville', serif;
+					color: @mainColor;
+					text-shadow:
+					-1px -1px 0 #B8860B,
+					1px -1px 0 #B8860B,
+					-1px 1px 0 #B8860B,
+					1px 1px 0 #B8860B;
+}
+}
+.image-overlay{
+	width: 100%;
+	height: 100%;
+	background-repeat:inherit;
+	background-color: tan;
+	opacity: .7;
+	border-radius: 5%;
+	margin:2rem;
+	
+	ul{
+		display:flex;
+		justify-content:space-evenly;
+	li{
+				font-size:2rem;
+				color: @mainColor2;
+				margin:1rem;
+		
+				}
+			}
+			
+	
+
+
+}
